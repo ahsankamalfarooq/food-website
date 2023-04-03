@@ -57,17 +57,17 @@
 
 
 .container {
-        width: 720px;
+        width: 100%;
         padding:0 15px;
         margin:0 auto;
     }
     
-/* @media (min-width:576px){
+@media (min-width:576px){
         .container{
             max-width:540px;
         }
     }
-@media (min-width: 775.33px) {
+@media (min-width: 7px) {
         .container {
           max-width: 720px;
         }
@@ -83,7 +83,7 @@
         .container {
           max-width: 1152px;
         }
-    } */
+    }
 header.topbar {
     background-color: black;
     color: var(--pure);
@@ -157,7 +157,7 @@ nav .navbar a{
     transition: all 0.3s;
     text-decoration: none;
     /* margin: 1rem 1rem; */
-    padding: 1rem 1rem;
+    padding: 1rem 1.5rem;
     font-family: 'Raleway-semibold';
     color: var(--secondary);
     font-size: 1rem;
@@ -235,22 +235,22 @@ header.hero p{
     transition: all 0.3s ease;
 }
 
-.btn-p {
+.btn-primary {
     background: var(--primary);
     color: var(--heaven);
 }
 
-.btn-p:hover {
+.btn-primary:hover {
     background: var(--heaven);
     color: var(--primary);
     border: 1px solid var(--primary);
 }
-.btn-s {
+.btn-secondry {
     background: var(--secondary);
     color: var(--heaven);
 }
 
-.btn-s:hover {
+.btn-secondry:hover {
     background: var(--heaven);
     color: var(--secondary);
     border: 1px solid var(--secondary);
@@ -262,12 +262,13 @@ header.hero .welcome{
 
 header.hero .hero-image{
     position: absolute;
-    top: 40%;
-    right: 40%;
+    top: -40%;
+    right: -3%;
 }
 
-
-
+header.hero .container{
+    position: relative;
+}
 
 
 
