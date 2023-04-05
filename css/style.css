@@ -49,6 +49,7 @@
     --webkit-font-smoothing : antialiased;
     /* --webkit-font-feature-settings: antialised; */
     height: 187.5rem;
+    font-family: 'Raleway-regular';
  }
 
 
@@ -202,6 +203,8 @@ nav .navbar a:hover{
     position: absolute;
     bottom: -20px;
     background-position: center;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: -1; 
 }
 
@@ -295,7 +298,7 @@ section.top-products{
     font-family: 'Raleway-bold';
     text-align: center;
     position: relative;
-    margin-bottom: 64px;
+    margin-bottom: 6rem;
 }
 
 .section-heading:after{
@@ -426,62 +429,245 @@ section.about-meal{
 }
 
 section.about-meal .container{
-    width: 100%;
-    height: 585px;
+    /* width: 100%;
+    height: 585px; */
 }
 
 section.about-meal .container h2{
-    font-family: "Raleway-bold"
+    font-family: "Raleway-bold";
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    color: var(--secondary);
+    line-height: 1.3;
+}
+
+section.about-meal .container .about-meal-wrapper .about-meal-left{
+    /* margin-top: 32px;
+    margin-left: 500px; */
+}
+section.about-meal .container .about-meal-wrapper{
+ 
 }
 
 section.about-meal .container img{
-    
+    width: 85%;
 }
 
 section.about-meal .container p{
-    font-family: "Raleway-regular"
+    font-family: "Raleway-regular";
+    margin-bottom: 4rem;
+    line-height: 1.7;
     
 }
 
+.flex-1{
+    flex: 1;
+}
 
+section.our-services{
+    background: var(--light);
+    z-index: 0;
+    position: relative;
 
+}
 
+section.our-services .service-card{
+    background: var(--heaven);
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    padding-top: 4rem;
+    border-radius: 4px;
+    margin-right: 2rem;
+    /* width: 22.75rem;
+    height: 15.25rem;
+    background: var(--heaven);
+    position: relative; */
+}
 
+section.our-services .service-card .icon{
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    /* position: absolute;
+    transform: translateY(-45px);
+    top: -25%; */
+}
 
+section.our-services .service-card h2{
+    font-family: 'Raleway-bold';
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
 
+section.our-services .service-card p{
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
 
+section.our-services .card-wrapper{
+    margin-right:  -2rem;
+    margin-top: 8rem;
+    
+}
 
+section.big-deal{
+    background: linear-gradient(
+        rgba(35,43,56,0.9),
+        rgba(35,43,56,0.9)
+    ), url(../images/food-table.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
 
+section.big-deal .timer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -2rem;
+    margin-bottom: 2rem;
+}
 
+section.big-deal .timer div{
+    /* margin: 0 1rem; */
+    margin-right: 2rem;
+    width: 150px;
+    height: 150px;
+    background: var(--primary);
+    border-radius: 4pcx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+section.big-deal .timer div span:first-child{
+    font-family: 'Raleway-semibold';
+    font-size: 2.5rem;
+    color: var(--heaven);
+    margin-bottom: 0.09rem;
+}
 
+section.big-deal .timer div span:last-child{
+    font-family: 'Raleway-medium';
+    color: var(--heaven);
+}
 
+.text-pure{
+    color: var(--pure);
+}
 
+section.latest-news{
+    background: var(--light);
+    position: relative;
+    z-index: 0;
+}
 
+section.latest-news .article-wrapper .card img{
+    width: 100%;
+}
 
+section.latest-news .article-wrapper .card{
+    margin-right: 2rem;
+    background: var(--heaven);
+    border-radius: 4px;
+}
 
+section.latest-news .article-wrapper{
+    margin-right: -2rem;
+}
 
+section.latest-news .article-wrapper .card .card-content{
+    padding: 2rem;
+}
 
+section.latest-news .article-wrapper .card .card-content .post-meta{
+    margin-bottom: 1rem;
+}
 
+section.latest-news .article-wrapper .card .card-content .post-meta .comment-count{
+    margin-left: 1rem;
+}
 
+section.latest-news .article-wrapper .card .card-content h1{
+    margin-bottom: 1rem;
+    font-family: "Raleway-bold";
+    font-size: 1.3rem;
+}
 
+section.latest-news .article-wrapper .card .card-content p{
+    line-height: 1.6;
+}
 
+section.latest-news .btn-wrapper{
+     margin-top: 2rem;
+}
 
+section.subscribe{
+    /* height: 493px; */
+    background: var(--primary);
+}
 
+section.subscribe .container > div:first-child img{
+    width: 90%;
+}
 
+section.subscribe .container div:first-child{
 
+}
 
+section.subscribe .container div:last-child{
 
+}
 
+section.subscribe h1{
+    font-family: 'Raleway-bold';
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
 
+section.subscribe p{
+    margin-bottom: 2rem;
+    font-family: 'Raleway-medium';
+    font-size: 1rem;
+    line-height: 1.5;
+}
 
+section.subscribe .input-wrap{
+    background: var(--heaven);
+    display: flex;
+    padding: 0.3rem;
+    border-radius: 4px;
+}
 
+section.subscribe .input-wrap input{
+    width: 100%;
+    border: none;
+    padding: 0 1rem;
+    font-size: 1rem;
+    outline: none;
+}
 
+section.subscribe .input-wrap button{
+    color: var(--pure);
+    background: var(--primary);
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    padding: 0.8 2rem;
+    outline: none;
+    /* padding: 14px;
+    width: 174px; */
+}
 
-
-
-
-
+section.subscribe .input-wrap button:hover{
+    color: var(--heaven);
+    background: var(--secondary);
+}
 
 
 
