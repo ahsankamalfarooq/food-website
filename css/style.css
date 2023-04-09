@@ -1065,10 +1065,23 @@ footer.copyright a{
     header.hero{
         margin-top: -3rem;
     }
+    section.big-deal .timer > div{
+        margin-right: 0.5rem;
+    }
     section.big-deal .timer{
-        
+        margin-right: -0.5rem;
+    }
+    section.subscribe .container{
+        flex-direction: column;
+        padding: 0.50rem;
+    }
+    section.contact-us{
+        /* display: block; */
+        flex-direction: column;
     }
 }
+
+
 
 
 
